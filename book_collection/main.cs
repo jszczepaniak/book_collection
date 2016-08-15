@@ -12,9 +12,13 @@ namespace book_collection
 {
     public partial class main : Form
     {
+        List<book> books;
+        List<author> authors;
         public main()
         {
             InitializeComponent();
+            authors.Add(new author("Nazwisko"));
+
         }
     }
 }

@@ -8,5 +8,10 @@ namespace book_collection
 {
     class author
     {
+        public string name { get; set; }
+        public author(string name)
+        {
+            this.name = name;
+        }
     }
 }

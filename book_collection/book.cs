@@ -10,24 +10,26 @@ namespace book_collection
     class book
     {
 
-        int bookId;
-        string title;
-        DateTime year;
-        int authorId;
-        string isbn;
+        public int bookId { get; set; }
+        public string title { get; set; }
+        public DateTime year { get; set; }
+        public int authorId { get; set; }
+        public string isbn { get; set; }
+        public author Author { get; set; }
 
-        public book()
-        {
+        //public book()
+        //{
 
-        }
-        public book(int cBookId, string cTitle, DateTime cYear, int cAuthorId, string cIsbn)
-        {
-            bookId = cBookId;
-            title = cTitle;
-            cYear = year;
-            authorId = cAuthorId;
-            isbn = cIsbn;
-        }
-
+        //}
+    public book(int cBookId, string cTitle, DateTime cYear, int cAuthorId, string cIsbn, author cAuthor)
+    {
+        bookId = cBookId;
+        title = cTitle;
+        cYear = year;
+        authorId = cAuthorId;
+        isbn = cIsbn;
+        Author = cAuthor;
     }
+
+}
 }
